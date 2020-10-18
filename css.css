@@ -6,14 +6,32 @@ div{
 	
 }
 
-.grid.container{
+.grid-container{
 	display: grid;
-	grid-template-rows: auto auto auto auto;
-	grid-template-columns: auto auto auto auto auto;
-	width: 1100px
+	grid-template-rows: 115px 425px 450px 50px auto;
+	grid-template-columns: auto 50px 300px 175px 175px 275px 75px auto;
+	width: 1100px;
 }
 
 .logo{
-	grid-column: 2;
+	grid-column: 2/span 6;
 	grid-row: 1;
+
+	padding-left: 30px;
+	padding-top: 10px;
+	background-image: url(img/header_bg.png);
 }
+
+.nav{
+	grid-row: 1;
+	grid-column: 4/7;
+	margin-top: 15px;
+} 
+
+
+.nav ul li {
+	display: inline-block;
+	margin-left: 30px; 
+} 
+
+
