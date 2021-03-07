@@ -1,8 +1,8 @@
 .container{
 	display: grid;
-	grid-template-columns: 50px 300px 300px 300px auto;
+	grid-template-columns: auto auto auto auto auto;
 	grid-gap: 10px;
-	grid-template-rows: 99px 425px 400px 150px;
+	grid-template-rows: 115px 425px auto 150px;
 }
 
 div{
@@ -17,9 +17,11 @@ div{
 .inlineBlock{
 	display:inline-block;
 }
-.width400{
-	width:100px;
+
+.width90{
+	width:90px;
 }
+
 section{
 	grid-column: 2/5;
 	grid-row: 2;
@@ -28,8 +30,8 @@ section{
 	padding: 20px;
 }
 
-.banner{
-	grid-column: 2/3;
+.bannertxt{
+	grid-column: 5/5;
 	grid-row: 2;
 }
 
@@ -51,4 +53,6 @@ section{
 .footer{
 	grid-column: 2;
 	grid-row: 4;
+	background-image: url("img/footer_bg.png");
+	background-repeat:repeat-x;
 }
